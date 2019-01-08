@@ -393,6 +393,7 @@ public abstract class AbstractST {
 
     @BeforeEach
     void setTestName(TestInfo testInfo) {
+        cluster.before();
         testName = testInfo.getTestMethod().get().getName();
     }
 
